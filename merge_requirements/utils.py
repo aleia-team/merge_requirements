@@ -42,7 +42,7 @@ def merge_dict(l_dict, r_dict):
             except InvalidVersion:
                 error_count = error_count+1
                 print('WARN: Unable to merge {0}, value "{1}" vs "{2}"'.format(
-                    key_item, l_dict[key], r_dict[key]
+                    key, l_dict[key], r_dict[key]
                 ), file=sys.stderr)
                 continue
 

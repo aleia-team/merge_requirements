@@ -48,7 +48,7 @@ class TestUtils(TestCase):
         }
 
         self.assertDictEqual(
-            merge_dict(bdict, mdict),
+            merge_dict(bdict, mdict)[0],
             merged_dict,
             'test_merge_dict'
         )
